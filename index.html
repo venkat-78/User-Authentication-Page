@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Authentication</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Signup Page -->
+<div id="signupPage" class="container">
+    <p>Welcome back! <span>&#9995;</span></p>
+    <h2>Signup to your account</h2>
+    <form id="signupForm">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <label for="confirmPassword">Confirm Password:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" required>
+
+        <button type="button" onclick="signup()">Signup</button>
+    </form>
+    <p id="signupMessage"></p>
+</div>
+
+<!-- Profile Page -->
+<div id="profilePage" class="container" style="display: none;">
+    <div class="profile-container">
+        <h2>Profile</h2>
+        <p style="font-size: 50px;"> &#x1F468;&#x200D;&#x1F4BB;</p>
+        <p id="profileDetails"></p>
+        <button onclick="logout()">Logout</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
